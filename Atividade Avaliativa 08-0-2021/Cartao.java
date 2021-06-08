@@ -25,7 +25,7 @@ public class Cartao {
         System.out.println("Para recarregar o se cartão Informe a a quantiade de unidade que quer compar");
        int entrada = teclado.nextInt();
         System.out.println("Agora você possui saldo de");
-       return unidade + entrada;
+       unidade = unidade + entrada;
+       return unidade;
     }
-
 }
