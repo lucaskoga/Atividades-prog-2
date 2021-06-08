@@ -15,14 +15,16 @@ public class Cartao {
         int saida = teclado.nextInt();
         if(saida > unidade){
             System.out.println("Unidade insuficiente, Voce Possui apenas ");
-        }else
+        }else {
             unidade = unidade - saida;
+        }
         return unidade;
     }
     //Comprar Recarga do cartão
     int ComprarSaldoDeCafe(){
         System.out.println("Para recarregar o se cartão Informe a a quantiade de unidade que quer compar");
        int entrada = teclado.nextInt();
+        System.out.println("Agora você possui saldo de");
        return unidade + entrada;
     }
 
