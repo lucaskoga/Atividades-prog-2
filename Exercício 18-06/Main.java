@@ -9,6 +9,6 @@ public class Main {
         r.setLado2(4);
         System.out.println("Lado2:"+r.getLado2());
 
-
+        r.verificarIgualdade(r.getLado1(),r.getLado2());
     }
 }
