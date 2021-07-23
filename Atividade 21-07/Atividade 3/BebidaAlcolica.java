@@ -18,4 +18,7 @@ public class BebidaAlcolica extends Bebida{
     public void setTeorAlcoolico(double teorAlcoolico) {
         this.teorAlcoolico = teorAlcoolico;
     }
+    public String toString(){
+        return "A Marca é:" + this.getMarca() + " Nome da bebida:" + this.getNome() + " A Porcentagem de alcool é: " + this.teorAlcoolico;
+    }
 }
