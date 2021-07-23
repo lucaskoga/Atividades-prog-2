@@ -28,4 +28,7 @@ public class Bebida {
     public void setNome(String nome) {
         this.nome = nome;
     }
+    public String toString(){
+        return "A Marca é:" + this.marca+ "O seu:" + this.nome;
+    }
 }
