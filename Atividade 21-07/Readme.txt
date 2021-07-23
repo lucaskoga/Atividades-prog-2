@@ -1,0 +1,1 @@
+Bom Professor, eu tentei fazer as questoes do modo que eu achei que era para ser feito, se estiver errado o modo que eu tentei fazer me avisa que eu tento arrumar
