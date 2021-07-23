@@ -18,4 +18,7 @@ public class SucaFruta extends Bebida{
     public void setFruta(String fruta) {
         this.fruta = fruta;
     }
+     public String toString(){
+        return "A Marca é:" + this.getMarca() + " Nome da bebida:" + this.getNome() + " A Fruta: " + this.fruta;
+    }
 }
