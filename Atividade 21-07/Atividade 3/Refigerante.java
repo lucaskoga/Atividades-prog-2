@@ -18,4 +18,7 @@ public class Refigerante extends Bebida{
     public void setSabo(String sabo) {
         this.sabor = sabo;
     }
+    public String toString(){
+        return "A Marca é:" + this.getMarca() + " Nome da bebida:" + this.getNome() + " O Sabor da bebida: " + this.sabor;
+    }
 }
