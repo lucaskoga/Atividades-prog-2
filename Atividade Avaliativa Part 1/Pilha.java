@@ -1,48 +1,24 @@
-import javax.swing.*;
+import java.util.ArrayList;
 
-public class Pilha {
 
-    No pilha[];
-    int TAM;
-    //ponteiro de controle da pilha
-    int topo = -1;
+public class Pilha <E> {
+    ArrayList<E> elementos;
 
-    public Pilha(int tam){
-        pilha = new No[tam];
-        this.TAM = tam;
+    public Pilha(){
+        elementos = new ArrayList();
     }
 
-    //push
-    public void empilha(No n){
-        if(topo == -1 || topo<(this.TAM-1)){
-            topo = topo +1;
-            pilha[topo] = n;
-            System.out.println("Inserido na pilha "+n.tostring());
-        }
-        else{
-            System.out.println("PILHA CHEIA...");
-        }
+    public void empilhar(E e){
+        elementos.add(e);
     }
 
-    //pop - desempilha - sempre no final
-    public No desempilha() throws ExcecaoPilhaVazia {
-        if(topo !=-1){
-            No temp = pilha[topo];
-            pilha[topo] = null;
-            topo = topo-1;
-            System.out.println("desempilha: "+temp.tostring());
-            return temp;
-        }
-        else{
+    public E desempilhar() throws ExcecaoPilhaVazia {
+        if (elementos.isEmpty()){
             throw new ExcecaoPilhaVazia();
         }
+        E aux = elementos.get(elementos.size() - 1);
+        elementos.remove(elementos.size() - 1);
+        return aux;
     }
-
-    public void imprime(){
-        for(int i = this.topo; i >= 0; i--) {
-            System.out.println(i+" - " +pilha[i].tostring());
-        }
-    }
-
 
 }
