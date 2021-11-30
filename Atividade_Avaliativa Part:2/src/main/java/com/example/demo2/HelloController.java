@@ -42,10 +42,11 @@ public class HelloController {
     void campoSaida()  {
        try {
            campoSaida.setText((String) pilha.desempilhar());
+           campoPilha.setText(pilha.toString());
            if (pilha.getElementos().isEmpty()){
                campoSaida.setText("");
            }
-           campoPilha.setText(pilha.toString());
+           
 
 
        }
