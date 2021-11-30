@@ -45,6 +45,7 @@ public class HelloController {
            if (pilha.getElementos().isEmpty()){
                campoSaida.setText("");
            }
+           campoPilha.setText(pilha.toString());
 
 
        }
