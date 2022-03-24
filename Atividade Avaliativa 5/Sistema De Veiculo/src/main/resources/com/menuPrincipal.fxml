@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="610.0" maxWidth="700.0" minHeight="610.0" minWidth="700.0" prefHeight="610.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.MenuPrincipalController">
+   <children>
+      <Label layoutX="61.0" layoutY="270.0" text="Gerenciamento de Veículos">
+         <font>
+            <Font size="48.0" />
+         </font></Label>
+      <MenuBar layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="700.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Motorista">
+            <items>
+              <MenuItem fx:id="motoristaCadastrar" mnemonicParsing="false" onAction="#mudarParaCadastroMotorista" text="Cadastrar Novo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Operador">
+            <items>
+              <MenuItem fx:id="operadorCadastrar" mnemonicParsing="false" onAction="#mudarParaCadastroOperador" text="Cadastrar Novo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Veículo">
+            <items>
+              <MenuItem fx:id="veiculoCadastrar" mnemonicParsing="false" onAction="#mudarParaCadastroVeiculo" text="Cadastrar Novo" />
+                  <MenuItem fx:id="veiculoVerTodos" mnemonicParsing="false" text="Ver Todos" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Sistema">
+               <items>
+                  <MenuItem fx:id="sistemaRetirar" mnemonicParsing="false" onAction="#mudarParaRetirarVeiculo" text="Retirar Veículo" />
+                  <MenuItem fx:id="sistemaDevolver" mnemonicParsing="false" onAction="#mudarParaDevolverVeiculo" text="Devolver Veículo" />
+                  <MenuItem fx:id="sistemaConsultar" mnemonicParsing="false" onAction="#mudarParaConsultarOperacoes" text="Consultar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Sair">
+               <items>
+                  <MenuItem fx:id="sairLogin" mnemonicParsing="false" onAction="#mudarParaLogin" text="Voltar ao Login" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="61.0" layoutY="340.0" text="v 0.1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
