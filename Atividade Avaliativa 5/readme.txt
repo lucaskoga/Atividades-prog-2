@@ -1,1 +1,4 @@
-Trabalho de Prog 2 
+Trabalho Avaliativo de Prog 2
+Professor: Merlim
+Dupla Alunos : Eduardo Petenasi
+               Lucas Renato Koga
